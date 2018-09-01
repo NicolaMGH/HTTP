@@ -8,8 +8,9 @@ var options = {
 }
 
 //Called by https when the request is made
-var callback = function() {
+var callback = function(response) {
   console.log("In response handler callback.");
+  console.log("response: ", response);
 }
 
 console.log("Im about to make a request!");
